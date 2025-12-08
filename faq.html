@@ -29,7 +29,132 @@
       color: #333;
       overflow-x: hidden;
     }
-  
+  nav {
+    display: flex;
+    justify-content: space-between;   /* left + right */
+    align-items: center;
+    padding: 0 20px;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    position: fixed;
+    top: 0;
+    /* max-width: 1200px; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    width: 100%;
+    z-index: 1000;
+}
+
+/* LEFT SIDE – SHLOOLINI HUNT LOGO */
+.nav-logo {
+    font-size: 32px;          /* Increase size */
+    font-weight: 700;
+    font-family: "Courgette", cursive;  /* Cursive font */
+    color: #0b4c89;
+}
+
+/* RIGHT SIDE MENU */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #0b4c89;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #06325c;
+}
+
+
+/* NAVBAR CONTAINER */
+/* nav {
+    display: flex;
+    justify-content: flex-end;   
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+} */
+
+/* NAV MENU ITEMS */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;                 /* spacing between items */
+}
+
+/* LINKS STYLE */
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #0b4c89;           /* blue text */
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #06325c;
+}
+
+/* .navbar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 20px 60px;
+  background: rgb(235, 235, 245);
+  color: #679ceb;
+} */
+
+
+/* Give the left and right containers equal space */
+/* .nav-left, .nav-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+} */
+
+.nav-left {
+  justify-content: flex-start;
+  gap: 20px; /* Adds space between the nav links */
+}
+
+/* Push the buttons in the right container to the far right */
+.nav-right {
+  justify-content: flex-end;
+  gap: 15px; /* Adds space between the Login and Register buttons */
+}
+
+/* Ensure the centered logo does not grow or shrink */
+.navbar .logo {
+  flex: 0 0 auto; /* Prevents the logo from taking extra space */
+}
+
+/* Styling for the new Login/Register buttons */
+/* .btn-nav {
+  padding: 8px 20px;
+  border: 1px solid white;
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+} */
+
+.btn-nav:hover {
+  /* background-color: white; */
+  color: rgb(1, 26, 1);
+}
 
     header {
       text-align: center;
